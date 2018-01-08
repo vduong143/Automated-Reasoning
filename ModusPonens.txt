@@ -1,0 +1,20 @@
+Solve Modus Ponens with Model Checking: 
+Q = true
+
+Solve Modus Ponens with Resolution: 
+
+Clauses: {P}	{~P,Q}
+Resolvents: [{Q}]
+
+Clauses: {~P,Q}	{P}
+Resolvents: [{Q}]
+
+Clauses: {~P,Q}	{~Q}
+Resolvents: [{~P}]
+
+Clauses: {~Q}	{~P,Q}
+Resolvents: [{~P}]
+
+Clauses: {Q}	{~Q}
+Resolvents: [{}]
+Q = true

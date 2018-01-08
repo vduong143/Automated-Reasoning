@@ -1,0 +1,1579 @@
+Solve Horn Clauses with Model Checking: 
+Can we prove that the unicorn is mythical?
+mythical = false
+
+Can we prove that the unicorn is magical?
+magical = true
+
+Can we prove that the unicorn is horned?
+horned = true
+
+Solve Horn Clauses with Resolution: 
+Can we prove that the unicorn is mythical?
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{immortal,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical,immortal}	{immortal,~immortal}
+Resolvents: [{~mythical,immortal}]
+
+Clauses: {~mythical,immortal}	{magical,~immortal}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{immortal,~immortal}
+Resolvents: [{mythical,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{immortal,mammal}
+Resolvents: [{mythical,mammal}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{~mythical}
+Resolvents: [{horned}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {~horned,magical}	{mythical,horned}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~mammal}	{mythical,mammal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,~mammal}	{mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{immortal,mammal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{immortal,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{magical,~mammal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{immortal,mammal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {horned,~mythical}	{mythical,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {horned,~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{mythical,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {immortal,mammal}	{immortal,~immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,mammal}	{magical,~immortal}
+Resolvents: [{mammal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal}
+Resolvents: [{mammal}]
+
+Clauses: {immortal,mammal}	{mythical,~immortal}
+Resolvents: [{mammal,mythical}]
+
+Clauses: {immortal,mammal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal,horned}
+Resolvents: [{mammal,horned}]
+
+Clauses: {immortal,mammal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{magical,immortal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {horned,mammal}	{magical,~mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {magical,mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{~mammal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{magical,immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~immortal}	{immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{magical,immortal}
+Resolvents: [{magical}]
+
+Clauses: {~immortal}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~immortal}	{immortal,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical,immortal}	{immortal,~immortal}
+Resolvents: [{~mythical,immortal}]
+
+Clauses: {~mythical,immortal}	{magical,~immortal}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,magical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{immortal,~immortal}
+Resolvents: [{mythical,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{magical,~mythical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {mythical,~immortal}	{magical,immortal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,~immortal}	{immortal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{immortal,mammal}
+Resolvents: [{mythical,mammal}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{magical,~mythical}
+Resolvents: [{horned,magical}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{~mythical}
+Resolvents: [{horned}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {magical,~mythical}	{mythical,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~mythical}	{mythical,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~mythical}	{mythical,magical}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mythical}	{mythical,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {mythical,magical}	{~mythical,immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {mythical,magical}	{magical,~mythical}
+Resolvents: [{magical}]
+
+Clauses: {mythical,magical}	{~mythical}
+Resolvents: [{magical}]
+
+Clauses: {mythical,magical}	{horned,~mythical}
+Resolvents: [{magical,horned}]
+
+Clauses: {~horned,magical}	{horned,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~horned,magical}	{mythical,horned}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{horned}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{immortal,horned}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,immortal}	{immortal,~immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {magical,immortal}	{magical,~immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,immortal}	{~immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,immortal}	{mythical,~immortal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,immortal}	{~immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {horned}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{horned,mammal}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~mammal}	{magical,mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{mythical,mammal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,~mammal}	{mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{immortal,mammal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{magical,immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {~immortal,horned}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~immortal,horned}	{immortal,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{magical,~mythical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {mythical,mammal}	{magical,~mammal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {immortal,horned}	{magical,~immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {immortal,horned}	{~immortal}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{mythical,~immortal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {immortal,horned}	{~horned,magical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,horned}	{~immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{magical,mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{immortal,mammal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,magical}
+Resolvents: [{magical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {horned,~mythical}	{mythical,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {horned,~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,~mythical}	{mythical,magical}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{mythical,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {immortal,mammal}	{immortal,~immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,mammal}	{magical,~immortal}
+Resolvents: [{mammal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal}
+Resolvents: [{mammal}]
+
+Clauses: {immortal,mammal}	{mythical,~immortal}
+Resolvents: [{mammal,mythical}]
+
+Clauses: {immortal,mammal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal,horned}
+Resolvents: [{mammal,horned}]
+
+Clauses: {immortal,mammal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{magical,immortal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {horned,mammal}	{magical,~mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,magical}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{~mammal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{magical,immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~immortal}	{immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{magical,immortal}
+Resolvents: [{magical}]
+
+Clauses: {~immortal}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~immortal}	{immortal,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical,immortal}	{immortal,~immortal}
+Resolvents: [{~mythical,immortal}]
+
+Clauses: {~mythical,immortal}	{magical,~immortal}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,magical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{immortal,~immortal}
+Resolvents: [{mythical,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{magical,~mythical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {mythical,~immortal}	{magical,immortal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,~immortal}	{immortal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,~immortal}	{~mythical}
+Resolvents: [{~immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{immortal,mammal}
+Resolvents: [{mythical,mammal}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{magical,~mythical}
+Resolvents: [{horned,magical}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{~mythical}
+Resolvents: [{horned}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {magical,~mythical}	{mythical,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~mythical}	{mythical,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~mythical}	{mythical,magical}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mythical}	{mythical,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {mythical,magical}	{~mythical,immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {mythical,magical}	{magical,~mythical}
+Resolvents: [{magical}]
+
+Clauses: {mythical,magical}	{~mythical}
+Resolvents: [{magical}]
+
+Clauses: {mythical,magical}	{horned,~mythical}
+Resolvents: [{magical,horned}]
+
+Clauses: {~horned,magical}	{horned,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~horned,magical}	{horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{mythical,horned}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{horned}
+Resolvents: [{magical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{immortal,horned}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,immortal}	{immortal,~immortal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {magical,immortal}	{magical,~immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,immortal}	{~immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,immortal}	{mythical,~immortal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,immortal}	{~immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {horned}	{~horned,magical}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{horned,mammal}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~mammal}	{magical,mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{mythical,mammal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,~mammal}	{mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~mammal}	{immortal,mammal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{magical,immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {~immortal,horned}	{immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~immortal,horned}	{immortal,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{magical,~mythical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {mythical,mammal}	{magical,~mammal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{~mythical}
+Resolvents: [{mammal}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {immortal,horned}	{magical,~immortal}
+Resolvents: [{horned,magical}]
+
+Clauses: {immortal,horned}	{~immortal}
+Resolvents: [{horned}]
+
+Clauses: {immortal,horned}	{mythical,~immortal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {immortal,horned}	{~horned,magical}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,horned}	{~immortal,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{magical,mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal,horned}	{immortal,mammal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {~mythical}	{mythical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {~mythical}	{mythical,magical}
+Resolvents: [{magical}]
+
+Clauses: {~mythical}	{mythical,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {horned,~mythical}	{mythical,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {horned,~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,~mythical}	{mythical,magical}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{mythical,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {immortal,mammal}	{immortal,~immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,mammal}	{magical,~immortal}
+Resolvents: [{mammal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal}
+Resolvents: [{mammal}]
+
+Clauses: {immortal,mammal}	{mythical,~immortal}
+Resolvents: [{mammal,mythical}]
+
+Clauses: {immortal,mammal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal,horned}
+Resolvents: [{mammal,horned}]
+
+Clauses: {immortal,mammal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+mythical = false
+
+Can we prove that the unicorn is magical?
+
+Clauses: {~magical}	{~horned,magical}
+Resolvents: [{~horned}]
+
+Clauses: {~horned,magical}	{~magical}
+Resolvents: [{~horned}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~magical}	{magical,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~magical}	{~horned,magical}
+Resolvents: [{~horned}]
+
+Clauses: {~magical}	{magical,~mammal}
+Resolvents: [{~mammal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {magical,~immortal}	{~magical}
+Resolvents: [{~immortal}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~mythical,immortal}	{immortal,~immortal}
+Resolvents: [{~mythical,immortal}]
+
+Clauses: {~mythical,immortal}	{magical,~immortal}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{immortal,~immortal}
+Resolvents: [{mythical,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{immortal,mammal}
+Resolvents: [{mythical,mammal}]
+
+Clauses: {~horned}	{mythical,horned}
+Resolvents: [{mythical}]
+
+Clauses: {~horned}	{~immortal,horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned}	{~mammal,horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~horned}	{horned,~mythical}
+Resolvents: [{~mythical}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{~horned}
+Resolvents: [{mythical}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {~horned,magical}	{~magical}
+Resolvents: [{~horned}]
+
+Clauses: {~horned,magical}	{mythical,horned}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~mammal}	{~magical}
+Resolvents: [{~mammal}]
+
+Clauses: {magical,~mammal}	{mythical,mammal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,~mammal}	{immortal,mammal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{immortal,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{magical,~mammal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {~mammal,horned}	{~horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{immortal,mammal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {horned,~mythical}	{mythical,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {horned,~mythical}	{~horned}
+Resolvents: [{~mythical}]
+
+Clauses: {horned,~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{mythical,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {immortal,mammal}	{immortal,~immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,mammal}	{magical,~immortal}
+Resolvents: [{mammal,magical}]
+
+Clauses: {immortal,mammal}	{mythical,~immortal}
+Resolvents: [{mammal,mythical}]
+
+Clauses: {immortal,mammal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal,horned}
+Resolvents: [{mammal,horned}]
+
+Clauses: {immortal,mammal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{magical,immortal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,~immortal}	{immortal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {horned,mammal}	{~mammal}
+Resolvents: [{horned}]
+
+Clauses: {horned,mammal}	{magical,~mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,mammal}	{~horned}
+Resolvents: [{mammal}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {magical,mammal}	{~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{~mammal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,mammal}	{~magical}
+Resolvents: [{mammal}]
+
+Clauses: {~mammal}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal}	{magical,mammal}
+Resolvents: [{magical}]
+
+Clauses: {~mammal}	{mythical,mammal}
+Resolvents: [{mythical}]
+
+Clauses: {~mammal}	{immortal,mammal}
+Resolvents: [{immortal}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{magical,immortal}
+Resolvents: [{magical}]
+
+Clauses: {magical,~immortal}	{immortal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {magical,~immortal}	{~magical}
+Resolvents: [{~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{~horned}
+Resolvents: [{mythical}]
+
+Clauses: {mythical,horned}	{magical,~mythical}
+Resolvents: [{horned,magical}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{~mythical}
+Resolvents: [{horned}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {mythical}	{~mythical,immortal}
+Resolvents: [{immortal}]
+
+Clauses: {mythical}	{magical,~mythical}
+Resolvents: [{magical}]
+
+Clauses: {mythical}	{~mythical}
+Resolvents: [{}]
+magical = true
+
+Can we prove that the unicorn is horned?
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{~horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~horned}	{~immortal,horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned}	{~mammal,horned}
+Resolvents: [{~mammal}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {~mammal}	{mythical,mammal}
+Resolvents: [{mythical}]
+
+Clauses: {~mammal}	{immortal,mammal}
+Resolvents: [{immortal}]
+
+Clauses: {magical,~immortal}	{immortal,~immortal}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {magical,~immortal}	{~mythical,immortal}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~immortal}	{immortal,mammal}
+Resolvents: [{magical,mammal}]
+
+Clauses: {~immortal}	{immortal,~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal}	{~mythical,immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~immortal}	{immortal,mammal}
+Resolvents: [{mammal}]
+
+Clauses: {~mythical,immortal}	{immortal,~immortal}
+Resolvents: [{~mythical,immortal}]
+
+Clauses: {~mythical,immortal}	{magical,~immortal}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {~mythical,immortal}	{~immortal}
+Resolvents: [{~mythical}]
+
+Clauses: {~mythical,immortal}	{mythical,~immortal}
+Resolvents: [{immortal,~immortal}]
+
+Clauses: {~mythical,immortal}	{mythical,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {~mythical,immortal}	{~immortal,horned}
+Resolvents: [{~mythical,horned}]
+
+Clauses: {~mythical,immortal}	{mythical,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {mythical,~immortal}	{immortal,~immortal}
+Resolvents: [{mythical,~immortal}]
+
+Clauses: {mythical,~immortal}	{~mythical,immortal}
+Resolvents: [{~immortal,immortal}]
+
+Clauses: {mythical,~immortal}	{horned,~mythical}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {mythical,~immortal}	{immortal,mammal}
+Resolvents: [{mythical,mammal}]
+
+Clauses: {~horned}	{mythical,horned}
+Resolvents: [{mythical}]
+
+Clauses: {~horned}	{~immortal,horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~horned}	{~mammal,horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~horned}	{horned,~mythical}
+Resolvents: [{~mythical}]
+
+Clauses: {mythical,horned}	{~mythical,immortal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {mythical,horned}	{~horned}
+Resolvents: [{mythical}]
+
+Clauses: {mythical,horned}	{~horned,magical}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,horned}	{horned,~mythical}
+Resolvents: [{horned}]
+
+Clauses: {~horned,magical}	{mythical,horned}
+Resolvents: [{magical,mythical}]
+
+Clauses: {~horned,magical}	{~immortal,horned}
+Resolvents: [{magical,~immortal}]
+
+Clauses: {~horned,magical}	{~mammal,horned}
+Resolvents: [{magical,~mammal}]
+
+Clauses: {~horned,magical}	{horned,~mythical}
+Resolvents: [{magical,~mythical}]
+
+Clauses: {magical,~mammal}	{mythical,mammal}
+Resolvents: [{magical,mythical}]
+
+Clauses: {magical,~mammal}	{immortal,mammal}
+Resolvents: [{magical,immortal}]
+
+Clauses: {~immortal,horned}	{immortal,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {~immortal,horned}	{~mythical,immortal}
+Resolvents: [{horned,~mythical}]
+
+Clauses: {~immortal,horned}	{~horned}
+Resolvents: [{~immortal}]
+
+Clauses: {~immortal,horned}	{~horned,magical}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {~immortal,horned}	{immortal,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {mythical,mammal}	{~mammal}
+Resolvents: [{mythical}]
+
+Clauses: {mythical,mammal}	{~mythical,immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {mythical,mammal}	{magical,~mammal}
+Resolvents: [{mythical,magical}]
+
+Clauses: {mythical,mammal}	{~mammal,horned}
+Resolvents: [{mythical,horned}]
+
+Clauses: {mythical,mammal}	{horned,~mythical}
+Resolvents: [{mammal,horned}]
+
+Clauses: {~mammal,horned}	{~horned}
+Resolvents: [{~mammal}]
+
+Clauses: {~mammal,horned}	{~horned,magical}
+Resolvents: [{~mammal,magical}]
+
+Clauses: {~mammal,horned}	{mythical,mammal}
+Resolvents: [{horned,mythical}]
+
+Clauses: {~mammal,horned}	{immortal,mammal}
+Resolvents: [{horned,immortal}]
+
+Clauses: {horned,~mythical}	{mythical,~immortal}
+Resolvents: [{horned,~immortal}]
+
+Clauses: {horned,~mythical}	{~horned}
+Resolvents: [{~mythical}]
+
+Clauses: {horned,~mythical}	{mythical,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,~mythical}	{~horned,magical}
+Resolvents: [{~mythical,magical}]
+
+Clauses: {horned,~mythical}	{mythical,mammal}
+Resolvents: [{horned,mammal}]
+
+Clauses: {immortal,mammal}	{immortal,~immortal}
+Resolvents: [{mammal,immortal}]
+
+Clauses: {immortal,mammal}	{~mammal}
+Resolvents: [{immortal}]
+
+Clauses: {immortal,mammal}	{magical,~immortal}
+Resolvents: [{mammal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal}
+Resolvents: [{mammal}]
+
+Clauses: {immortal,mammal}	{mythical,~immortal}
+Resolvents: [{mammal,mythical}]
+
+Clauses: {immortal,mammal}	{magical,~mammal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,mammal}	{~immortal,horned}
+Resolvents: [{mammal,horned}]
+
+Clauses: {immortal,mammal}	{~mammal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{magical,~immortal}
+Resolvents: [{~immortal,magical}]
+
+Clauses: {immortal,~immortal}	{magical,immortal}
+Resolvents: [{immortal,magical}]
+
+Clauses: {immortal,~immortal}	{immortal,horned}
+Resolvents: [{immortal,horned}]
+
+Clauses: {immortal,~immortal}	{~immortal}
+Resolvents: [{~immortal}]
+
+Clauses: {immortal,~immortal}	{~mythical,immortal}
+Resolvents: [{immortal,~mythical}]
+
+Clauses: {immortal,~immortal}	{mythical,~immortal}
+Resolvents: [{~immortal,mythical}]
+
+Clauses: {immortal,~immortal}	{immortal}
+Resolvents: [{immortal}]
+
+Clauses: {immortal,~immortal}	{~immortal,horned}
+Resolvents: [{~immortal,horned}]
+
+Clauses: {immortal,~immortal}	{immortal,mammal}
+Resolvents: [{immortal,mammal}]
+
+Clauses: {horned,mammal}	{~mammal}
+Resolvents: [{horned}]
+
+Clauses: {horned,mammal}	{magical,~mammal}
+Resolvents: [{horned,magical}]
+
+Clauses: {horned,mammal}	{~mammal,horned}
+Resolvents: [{horned}]
+
+Clauses: {horned,mammal}	{~horned}
+Resolvents: [{mammal}]
+
+Clauses: {horned,mammal}	{~horned,magical}
+Resolvents: [{mammal,magical}]
+
+Clauses: {magical,mammal}	{~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{magical,~mammal}
+Resolvents: [{magical}]
+
+Clauses: {magical,mammal}	{~mammal,horned}
+Resolvents: [{magical,horned}]
+
+Clauses: {~mammal}	{horned,mammal}
+Resolvents: [{horned}]
+
+Clauses: {~mammal}	{magical,mammal}
+Resolvents: [{magical}]
+
+Clauses: {~mammal}	{mammal}
+Resolvents: [{}]
+horned = true
